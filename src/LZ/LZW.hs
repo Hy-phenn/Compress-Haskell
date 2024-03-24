@@ -14,7 +14,7 @@ type Dictionary = [String]
 -- | LZW compress method
 compress :: String -> [Int]
 compress [] = [] -- Si le texte est vide, on revoie un tableau vide (Optimisation)
-compress texte = compressHelper texte [] ascii []            -- Le texte qu'on veut compresser, le morceau de texte à trouver, la table ascii et un accumulateur de récursion.
+compress texte = compressHelper texte [] ascii [] -- Le texte qu'on veut compresser, le morceau de texte à trouver, la table ascii et un accumulateur de récursion.
 
 
 compressHelper :: String -> String -> Dictionary -> [Int] -> [Int]
