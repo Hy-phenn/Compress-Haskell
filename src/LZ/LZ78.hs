@@ -51,3 +51,5 @@ decompressHelper ((index, char):rest) dictionary =
         newDictionary = dictionary ++ [newString]  -- Met à jour le dictionnaire avec la nouvelle chaîne
     in newString ++ decompressHelper rest newDictionary  -- Renvoie la nouvelle chaîne suivie de la décompression récursive du reste de la liste avec le nouveau dictionnaire
 
+    --
+
